@@ -1,0 +1,71 @@
+/* Tictactoe.css */
+.tictactoe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffd6e7, #ffe7f3);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .status {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; /* Remove gaps to create continuous borders */
+    padding: 20px;
+    background: linear-gradient(135deg, #d9e7ff, #f0f8ff);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background: #fafafa;
+    border: 2px solid #ddd; /* Border around each square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0; /* Hide text (for img elements) */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+  
+  .square:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: #837e7e;
+  }
+  
+  .square img {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .reset {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6f61, #d64550);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .reset:hover {
+    background: linear-gradient(135deg, #ff856f, #e55b59);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
